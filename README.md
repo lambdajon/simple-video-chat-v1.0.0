@@ -4,6 +4,5 @@ simple p2p video chat
 ## Installation
 
 1. clone this repo
-2. .env config setting
-3. `$npm install`
-4. `$npm run dev`
+2. `$npm install`
+3. `$npm run dev`
