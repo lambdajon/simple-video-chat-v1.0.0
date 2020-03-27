@@ -86,7 +86,7 @@ function updateUserList(socketIds) {
   });
 }
 
-const socket = io.connect(windows.location.href);
+const socket = io.connect(window.location.href);
 
 socket.on("update-user-list", ({ users }) => {
   updateUserList(users);
