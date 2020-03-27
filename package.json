@@ -10,14 +10,13 @@
   },
   "author": "AhmadulinJs",
   "license": "ISC",
-  "devDependencies": {
+  "devDependencies": {},
+  "dependencies": {
     "@types/express": "^4.17.2",
     "@types/socket.io": "^2.1.4",
     "nodemon": "^2.0.2",
     "ts-node": "^8.6.2",
-    "typescript": "^3.8.2"
-  },
-  "dependencies": {
+    "typescript": "^3.8.2",
     "express": "^4.17.1",
     "socket.io": "^2.3.0"
   }
