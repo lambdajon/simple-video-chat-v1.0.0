@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "ts-node ./src/index.ts",
+    "start": "tsc && node ./src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "AhmadulinJs",
