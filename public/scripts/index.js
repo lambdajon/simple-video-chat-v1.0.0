@@ -2,10 +2,33 @@ let isAlreadyCalling = false;
 let getCalled = false;
 
 const existingCalls = [];
+const configuration = {
+  iceServers: [
+    {
+      urls: "turn:47.93.186.97:3478?transport=udp",
+      credential: "123456",
+      username: "ddssingsong"
+    },
+    // {
+    //   urls: "turn:turnserver.appearin.net:443?transport=udp",
+    //   credential: "xOXvyhbA+OOOvON+yjJlFrad2y0=",
+    //   username: "196a444c-c2c6-49f1-973c-c0ff3ad497e6:1584683669"
+    // },
+    {
+      urls: "stun:stun1.l.google.com:19302"
+    },
+    {
+      urls: "stun:stun2.l.google.com:19302"
+    },
+    {
+      urls: "stun:stun3.l.google.com:19302"
+    }
+  ]
+};
 
 const { RTCPeerConnection, RTCSessionDescription } = window;
 
-const peerConnection = new RTCPeerConnection();
+const peerConnection = new RTCPeerConnection(configuration);
 
 function unselectUsersFromList() {
   const alreadySelectedUser = document.querySelectorAll(
